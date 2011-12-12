@@ -17,7 +17,7 @@ namespace ArithmeticVisitor.ConsoleApplication
             IArithmeticExpression leftNode = new ConstantExpression(15);
             IArithmeticExpression rightNode = new SubtractionExpression(leftInnerNode, rightInnerNode);
 
-            IArithmeticExpression rootNode = new AdditionExpression(leftNode, new BracketsExpression(rightNode));
+            IArithmeticExpression rootNode = new MultiplicationExpression(leftNode, new BracketsExpression(rightNode));
 
             rootNode.Accept(visitor);
             

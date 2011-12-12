@@ -46,8 +46,10 @@
     <Compile Include="BracketsExpression.cs" />
     <Compile Include="ConsoleArithmeticVisitor.cs" />
     <Compile Include="ConstantExpression.cs" />
+    <Compile Include="DivisionExpression.cs" />
     <Compile Include="IArithmeticExpression.cs" />
     <Compile Include="IArithmeticVisitor.cs" />
+    <Compile Include="MultiplicationExpression.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubtractionExpression.cs" />
   </ItemGroup>

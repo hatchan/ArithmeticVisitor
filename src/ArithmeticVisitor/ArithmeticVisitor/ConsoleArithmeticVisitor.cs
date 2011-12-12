@@ -43,6 +43,28 @@ namespace ArithmeticVisitor
             Console.Write(" ) ");
         }
 
+        public void Visit(MultiplicationExpression expression)
+        {
+            // Handle left: 
+            expression.LeftArithmeticExpression.Accept(this);
+
+            Console.Write(" * ");
+
+            // Handle right: 
+            expression.RightArithmeticExpression.Accept(this);
+        }
+
+        public void Visit(DivisionExpression expression)
+        {
+            // Handle left: 
+            expression.LeftArithmeticExpression.Accept(this);
+
+            Console.Write(" / ");
+
+            // Handle right: 
+            expression.RightArithmeticExpression.Accept(this);
+        }
+
         #endregion
     }
 }
